@@ -1,0 +1,9 @@
+#Para usuarios MAC
+
+$docker $(docker-machine config default) run hello-world
+
+$docker $(docker-machine config default) build -t openmpi/openmpi:v1
+
+docker $(docker-machine config default) run --rm -v $(pwd):/results openmpi/openmpi:v1 mpirun -n 5 /results/hello_clase.c -o /results/hello_clase.out
+
+docker $(docker-machine config default) run --rm -v $(pwd):/results openmpi/openmpi:v1 mpirun -n 5 /results/hello_clase.out

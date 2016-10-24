@@ -1,0 +1,26 @@
+Ejemplo de multiplicación de matrices usando OpenMP.
+Inicializamos la multiplicación de matrices utilizando 4 threads
+Inicializamos las matrices...
+El thread 2 inicia la multiplicación...
+El thread 1 inicia la multiplicación...
+El thread 3 inicia la multiplicación...
+El thread 0 inicia la multiplicación...
+El thread=1 hizo el renglón=1
+El thread=0 hizo el renglón=0
+El tiempo de ejecucion fue: 0.000247
+******************************************************
+Matrix A:
+  7.00     3.00   
+  2.00    10.00   
+******************************************************
+******************************************************
+Matrix B:
+  8.00     6.00   
+  4.00     3.00   
+******************************************************
+******************************************************
+Result Matrix:
+ 68.00    51.00   
+ 56.00    42.00   
+******************************************************
+Done.
